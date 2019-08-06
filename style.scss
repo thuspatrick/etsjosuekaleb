@@ -1,0 +1,100 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aquamarine;
+  background-image: url(img/jeff-sheldon-ok.jpg);
+  background-size: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-weight: 700;
+}
+header {
+  @include flexCenter(row);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  margin: 15px auto;
+  background-color: yellow;
+  nav-bar {
+    width: 70vw;
+    background-color: blanchedalmond;
+    ul li {
+      display: inline-block;
+      list-style-type: none;
+      text-transform: uppercase;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 14px 16px;
+      &:hover {
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+  .logo {
+    width: 20vw;
+    text-align: center;
+  }
+}
+#main {
+  height: 100vh;
+  h1 {
+    padding: 40vh 10vw;
+    font-family: "Lovers Quarrel", cursive;
+    font-size: 78px;
+    color: gold;
+    font-weight: 900;
+  }
+}
+main {
+  .box-1 {
+    padding: 15px 15px;
+    text-align: justify;
+    // width: 30vw;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  .container {
+    @include flexCenter(column);
+  }
+}
+footer {
+  margin: auto;
+}
+#contact {
+  margin: 25px;
+  h4 {
+    font-size: 36px;
+    padding-bottom: 25px;
+  }
+}
+.footerbot {
+  background-color: darkviolet;
+
+  width: 100vw;
+  padding: 15px 40px;
+}
+@media screen and (max-width: 576px) {
+  //   body {
+  //     background-image: none;
+  //   }
+  header {
+    @include flexCenter(column);
+  }
+  .container {
+    flex-direction: column;
+  }
+}

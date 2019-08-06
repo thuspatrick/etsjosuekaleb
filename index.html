@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap"
+      rel="stylesheet"
+    />
     <title>Ets Josue et Kaleb</title>
   </head>
   <body>
-    <header>
+    <header id="Home">
       <div class="logo">JOSUE ET KALEB</div>
       <nav-bar>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#">A propos</a></li>
-          <li><a href="#">Nos Services</a></li>
+          <li><a href="#Servs">Nos Services</a></li>
           <li><a href="#">Nos Réalisations</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav-bar>
     </header>
     <main>
-      <h1>Nous réalisons vos rêves</h1>
+      <section id="main">
+        <h1>Nous réalisons vos rêves</h1>
+      </section>
+      <h2 id="Servs">Nos Services</h2>
       <div class="container">
-        <h2>Nos Services</h2>
         <div class="box-1">
           <h3>Construction Métallique</h3>
           <p>
@@ -87,6 +93,11 @@
             finitions.
           </p>
         </div>
+      </div>
+    </main>
+    <footer>
+      <div id="contact">
+        <h4>Contactez-nous.</h4>
         <form id="contact_form">
           <div class="row">
             <label class="required" for="name">Nom :</label><br />
@@ -124,14 +135,14 @@
           <input id="submit_button" type="submit" value="Envoyez" />
         </form>
       </div>
-    </main>
-    <footer>
-      <p>
-        988, Rue Gallieni Akwa - BP 6525 Douala - Tel: +237699748731 /
-        +237675283143 - E-Mail: ets.josuekaleb@gmail.com
-      </p>
-      <h6>&copy;Ets. Josué et Kaleb - 2019</h6>
-      <h6>Edité par Sostectengineers Inc.</h6>
+      <div class="footerbot">
+        <p>
+          988, Rue Gallieni Akwa - BP 6525 Douala - Tel: +237699748731 /
+          +237675283143 - E-Mail: ets.josuekaleb@gmail.com
+        </p>
+        <h6>&copy;Ets. Josué et Kaleb - 2019</h6>
+        <h6>Edité par Sostectengineers Inc.</h6>
+      </div>
     </footer>
   </body>
 </html>
