@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/857385751d.js"></script>
     <title>Ets Josue et Kaleb</title>
   </head>
   <body>
@@ -24,122 +21,138 @@
         </ul>
       </nav-bar>
     </header>
-    <main>
-      <section id="main">
+    <main id="main">
+      <section id="slogan">
         <h1>Nous réalisons vos rêves</h1>
+        <a class="btn" href="#">Lisez plus</a>
       </section>
-      <h2 id="Servs">Nos Services</h2>
-      <div class="container">
-        <div class="box-1">
-          <h3>Construction Métallique</h3>
-          <p>
-            Vous avez désormais la solution pour vos constructions métalliques
-            de tous types. Votre sollicitaion est un gage de réalisation
-            conforme à vos exigences. Quelque soit la dimension de l'ouvrage:
-            Charpente métallique, Rack, Bac, Cuve, et autres, notre savoir-faire
-            méritera votre confiance.
-          </p>
+      <section class="container">
+        <h2 id="Servs">Nos Services</h2>
+        <div class="boxes">
+          <div class="box-1">
+            <i class="fas fa-apple-alt fa-2x"></i>
+            <h3>Construction Métallique</h3>
+            <p>
+              Vous avez désormais la solution pour vos constructions métalliques
+              de tous types. Votre sollicitaion est un gage de réalisation
+              conforme à vos exigences. Quelque soit la dimension de l'ouvrage:
+              Charpente métallique, Rack, Bac, Cuve, et autres, notre
+              savoir-faire méritera votre confiance.
+            </p>
+          </div>
+          <div class="box-1">
+            <h3>Menuiserie Métallique</h3>
+            <p>
+              Plus de stress à vous faire pour vos ouvrages métalliques de tous
+              types. Quelque soit votre besoin en matière de : Grille de
+              sécurité, Portail métallique, Porte, plaque publicitaire, Enseigne
+              lumineuse, Férronnerie et autres. Faite nous confiance et vos
+              rêves se réaliseront à coup sûr. Nous mettons à votre disposition
+              un catalogue d'illustrations.
+            </p>
+          </div>
+          <div class="box-1">
+            <h3>Menuiserie Alu & Bois</h3>
+            <p>
+              Nous ne lésinons pas sur les moyens dans ce domaine particulier,
+              qui ne saurait être confié aux amateurs du fait de son caractère
+              artistique, spécifique et précis. La menuiserie sur aluminium et
+              bois participe des secteurs qui nous valent nos lettres de
+              référence. Plusieurs partenaires nous ont fait confiance pour le
+              travail de qualité effectué dans les règles de l'art et surtout
+              avec respect de délais.
+            </p>
+          </div>
+          <div class="box-1">
+            <h3>Fourniture Industrielle</h3>
+            <p>
+              Josué & Kaleb met à votre disposition des fournitures
+              industrielles répondant aux normes internationales. Le rapport
+              qualité / prix est imbattable. Plus besoin de faire tous les
+              magasins pour espérer trouver certains accessoires. Faites nous
+              part de vos besoins et vous serez livré dans les délais.
+            </p>
+          </div>
+          <div class="box-1">
+            <h3>Prestation de Services</h3>
+            <p>
+              Nos prestations épousent généralement les besoins de nos clients.
+              Exprimez-nous vos besoins et nousnous ferons le plaisir de vous
+              fournir des services conformes à vos attentes.
+            </p>
+          </div>
+          <div class="box-1">
+            <h3>Bâtiment Clé en main</h3>
+            <p>
+              Nous avons l'expérience, le savoir-faire, le personnel et
+              l'équipement adéquat pour construire la maison de vos rêves. Nous
+              sommes également ouvert à vous prodiguer des conseils techniques
+              judicieux. Désormais, une seule adresse : Josué & Kaleb. Une
+              entreprise dynamique et fiable vous accompagne depuis la
+              schématisation de vos idées (conception du plan) jusqu'aux
+              finitions.
+            </p>
+          </div>
         </div>
-        <div class="box-1">
-          <h3>Menuiserie Métallique</h3>
-          <p>
-            Plus de stress à vous faire pour vos ouvrages métalliques de tous
-            types. Quelque soit votre besoin en matière de : Grille de sécurité,
-            Portail métallique, Porte, plaque publicitaire, Enseigne lumineuse,
-            Férronnerie et autres. Faite nous confiance et vos rêves se
-            réaliseront à coup sûr. Nous mettons à votre disposition un
-            catalogue d'illustrations.
-          </p>
+      </section>
+      <section id="contact-info">
+        <div class="form">
+          <h4>Contactez-nous.</h4>
+          <form id="contact_form">
+            <div class="row">
+              <label class="required" for="name">Nom :</label><br />
+              <input
+                id="name"
+                class="input"
+                name="name"
+                type="text"
+                value=""
+                size="30"
+              />
+            </div>
+            <div class="row">
+              <label class="required" for="email">E-Mail:</label><br />
+              <input
+                id="email"
+                class="input"
+                name="email"
+                type="text"
+                value=""
+                size="30"
+              />
+            </div>
+            <div class="row">
+              <label class="required" for="message">Message:</label><br />
+              <textarea
+                id="message"
+                class="input"
+                name="message"
+                rows="7"
+                cols="30"
+              ></textarea
+              ><br />
+            </div>
+            <input id="submit_button" type="submit" value="Envoyez" />
+          </form>
         </div>
-        <div class="box-1">
-          <h3>Menuiserie Alu & Bois</h3>
-          <p>
-            Nous ne lésinons pas sur les moyens dans ce domaine particulier, qui
-            ne saurait être confié aux amateurs du fait de son caractère
-            artistique, spécifique et précis. La menuiserie sur aluminium et
-            bois participe des secteurs qui nous valent nos lettres de
-            référence. Plusieurs partenaires nous ont fait confiance pour le
-            travail de qualité effectué dans les règles de l'art et surtout avec
-            respect de délais.
-          </p>
+        <div class="adresses">
+          <div class="adress-1">
+            <i class="fas fa-home fa-2x"></i>
+            <p>988, Rue Gallieni Akwa BP 6525 Douala</p>
+          </div>
+          <div class="adress-1">
+            <i class="fas fa-phone fa-2x"></i>
+            <p>Tel: +237699748731 Tel: +237675283143</p>
+          </div>
+          <div class="adress-1">
+            <i class="fas fa-at fa-2x"></i>
+            <p>ets.josuekaleb@gmail.com</p>
+          </div>
         </div>
-        <div class="box-1">
-          <h3>Fourniture Industrielle</h3>
-          <p>
-            Josué & Kaleb met à votre disposition des fournitures industrielles
-            répondant aux normes internationales. Le rapport qualité / prix est
-            imbattable. Plus besoin de faire tous les magasins pour espérer
-            trouver certains accessoires. Faites nous part de vos besoins et
-            vous serez livré dans les délais.
-          </p>
-        </div>
-        <div class="box-1">
-          <h3>Prestation de Services</h3>
-          <p>
-            Nos prestations épousent généralement les besoins de nos clients.
-            Exprimez-nous vos besoins et nousnous ferons le plaisir de vous
-            fournir des services conformes à vos attentes.
-          </p>
-        </div>
-        <div class="box-1">
-          <h3>Bâtiment Clé en main</h3>
-          <p>
-            Nous avons l'expérience, le savoir-faire, le personnel et
-            l'équipement adéquat pour construire la maison de vos rêves. Nous
-            sommes également ouvert à vous prodiguer des conseils techniques
-            judicieux. Désormais, une seule adresse : Josué & Kaleb. Une
-            entreprise dynamique et fiable vous accompagne depuis la
-            schématisation de vos idées (conception du plan) jusqu'aux
-            finitions.
-          </p>
-        </div>
-      </div>
+      </section>
     </main>
     <footer>
-      <div id="contact">
-        <h4>Contactez-nous.</h4>
-        <form id="contact_form">
-          <div class="row">
-            <label class="required" for="name">Nom :</label><br />
-            <input
-              id="name"
-              class="input"
-              name="name"
-              type="text"
-              value=""
-              size="30"
-            />
-          </div>
-          <div class="row">
-            <label class="required" for="email">E-Mail:</label><br />
-            <input
-              id="email"
-              class="input"
-              name="email"
-              type="text"
-              value=""
-              size="30"
-            />
-          </div>
-          <div class="row">
-            <label class="required" for="message">Message:</label><br />
-            <textarea
-              id="message"
-              class="input"
-              name="message"
-              rows="7"
-              cols="30"
-            ></textarea
-            ><br />
-          </div>
-          <input id="submit_button" type="submit" value="Envoyez" />
-        </form>
-      </div>
       <div class="footerbot">
-        <p>
-          988, Rue Gallieni Akwa - BP 6525 Douala - Tel: +237699748731 /
-          +237675283143 - E-Mail: ets.josuekaleb@gmail.com
-        </p>
         <h6>&copy;Ets. Josué et Kaleb - 2019</h6>
         <h6>Edité par Sostectengineers Inc.</h6>
       </div>

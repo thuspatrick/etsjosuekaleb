@@ -1,100 +1,143 @@
-@import "./variables";
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --primary: rgb(233, 25, 240);
+  --secondary: rgb(166, 243, 66);
+  --light-primary: rgba(233, 25, 240, 0.445);
+  --light-secondary: rgba(166, 243, 66, 0.425);
+  --shadow: 0 1px 8px rgba(51, 51, 51, 0.836);
+}
+html {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-  background-color: aquamarine;
-  background-image: url(img/jeff-sheldon-ok.jpg);
-  background-size: 100vw;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-align: center;
-  font-weight: 700;
+  background: var(--light-secondary);
+  margin: 0 15px;
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
 }
-header {
-  @include flexCenter(row);
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 90vw;
-  margin: 15px auto;
-  background-color: yellow;
-  nav-bar {
-    width: 70vw;
-    background-color: blanchedalmond;
-    ul li {
-      display: inline-block;
-      list-style-type: none;
-      text-transform: uppercase;
+img {
+  max-width: 100%;
+}
+.btn {
+  background: var(--primary);
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  color: black;
+  width: 100px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.btn:hover {
+  background: var(--secondary);
+}
+nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  li {
+    margin: 10px 100px;
+  }
+}
+// Header
+nav-bar a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.4rem;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+nav-bar a:hover {
+  background: var(--secondary);
+}
+
+// Main
+#main {
+  display: grid;
+  grid-gap: 20px;
+  width: 100vw;
+}
+#slogan {
+  text-align: center;
+}
+// Boxes
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "services"
+    "box";
+  // text-align: center;
+}
+#Servs {
+  grid-area: "services";
+  display: grid;
+  justify-content: center;
+}
+.boxes {
+  grid-area: "box";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.box-1 {
+  box-shadow: var(--shadow);
+  width: 400px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+}
+// Contact Info
+#contact-info {
+  padding: 1rem auto;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-evenly;
+}
+#contact-form {
+  width: 40%;
+}
+.adresses {
+  // width: 40%;
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-evenly;
+  .adress-1 {
+    width: 50%;
+    i {
+      justify-content: space-around;
     }
-    a {
-      text-decoration: none;
-      display: block;
-      padding: 14px 16px;
-      &:hover {
-        background-color: blue;
-        color: white;
+  }
+  // Footer
+  footer {
+    box-shadow: var(--shadow);
+    background: var(--primary);
+    text-align: center;
+    padding: 2rem auto;
+    width: 100%;
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @media (min-width: 600px) {
+    .boxes {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    nav-bar ul {
+      flex-direction: row;
+      li {
+        width: 250px;
+        margin: 10px 10px;
       }
     }
-  }
-  .logo {
-    width: 20vw;
-    text-align: center;
-  }
-}
-#main {
-  height: 100vh;
-  h1 {
-    padding: 40vh 10vw;
-    font-family: "Lovers Quarrel", cursive;
-    font-size: 78px;
-    color: gold;
-    font-weight: 900;
-  }
-}
-main {
-  .box-1 {
-    padding: 15px 15px;
-    text-align: justify;
-    // width: 30vw;
-    h3 {
-      text-align: center;
-      text-transform: uppercase;
-      padding-bottom: 10px;
-    }
-  }
-  h2 {
-    text-transform: uppercase;
-  }
-  .container {
-    @include flexCenter(column);
-  }
-}
-footer {
-  margin: auto;
-}
-#contact {
-  margin: 25px;
-  h4 {
-    font-size: 36px;
-    padding-bottom: 25px;
-  }
-}
-.footerbot {
-  background-color: darkviolet;
-
-  width: 100vw;
-  padding: 15px 40px;
-}
-@media screen and (max-width: 576px) {
-  //   body {
-  //     background-image: none;
-  //   }
-  header {
-    @include flexCenter(column);
-  }
-  .container {
-    flex-direction: column;
   }
 }

@@ -1,150 +1,194 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --primary: rgb(233, 25, 240);
+  --secondary: rgb(166, 243, 66);
+  --light-primary: rgba(233, 25, 240, 0.445);
+  --light-secondary: rgba(166, 243, 66, 0.425);
+  --shadow: 0 1px 8px rgba(51, 51, 51, 0.836);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: aquamarine;
-  background-image: url(img/jeff-sheldon-ok.jpg);
-  background-size: 100vw;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: var(--light-secondary);
+  margin: 0 15px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background: var(--primary);
+  padding: 0.4rem 0.8rem;
   text-align: center;
-  font-weight: 700;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 90vw;
-  margin: 15px auto;
-  background-color: yellow;
-}
-
-header nav-bar {
-  width: 70vw;
-  background-color: blanchedalmond;
-}
-
-header nav-bar ul li {
-  display: inline-block;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-header nav-bar a {
+  color: black;
+  width: 100px;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
   text-decoration: none;
-  display: block;
-  padding: 14px 16px;
 }
 
-header nav-bar a:hover {
-  background-color: blue;
-  color: white;
+.btn:hover {
+  background: var(--secondary);
 }
 
-header .logo {
-  width: 20vw;
-  text-align: center;
-}
-
-#main {
-  height: 100vh;
-}
-
-#main h1 {
-  padding: 40vh 10vw;
-  font-family: "Lovers Quarrel", cursive;
-  font-size: 78px;
-  color: gold;
-  font-weight: 900;
-}
-
-main .box-1 {
-  padding: 15px 15px;
-  text-align: justify;
-}
-
-main .box-1 h3 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-main h2 {
-  text-transform: uppercase;
-}
-
-main .container {
+nav-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0;
+  list-style: none;
 }
 
-footer {
-  margin: auto;
+nav-bar ul li {
+  margin: 10px 100px;
 }
 
-#contact {
-  margin: 25px;
+nav-bar a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.4rem;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
 
-#contact h4 {
-  font-size: 36px;
-  padding-bottom: 25px;
+nav-bar a:hover {
+  background: var(--secondary);
 }
 
-.footerbot {
-  background-color: darkviolet;
+#main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
   width: 100vw;
-  padding: 15px 40px;
 }
 
-@media screen and (max-width: 576px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
+#slogan {
+  text-align: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+      grid-template-areas: "services" "box";
+}
+
+#Servs {
+  grid-area: "services";
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boxes {
+  grid-area: "box";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.box-1 {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  width: 400px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+}
+
+#contact-info {
+  padding: 1rem auto;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contact-form {
+  width: 40%;
+}
+
+.adresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.adresses .adress-1 {
+  width: 50%;
+}
+
+.adresses .adress-1 i {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.adresses footer {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  background: var(--primary);
+  text-align: center;
+  padding: 2rem auto;
+  width: 100%;
+}
+
+.adresses footer h6 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .adresses .boxes {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .container {
-    -webkit-box-orient: vertical;
+  .adresses nav-bar ul {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .adresses nav-bar ul li {
+    width: 250px;
+    margin: 10px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
