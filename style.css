@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+.header-image {
+  background-image: url("./img/jeff-sheldon-ok.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+.myfooter {
+  padding: 1em 0 1em 0;
+  background-color: #8a4d76;
+}
+
+.social-link {
+  padding: 0 0.5em;
+}
+
+#realisationss {
+  padding: 3em autos;
+}
+
+#realisationss h1 {
+  padding-top: 3em;
+}
+/*# sourceMappingURL=style.css.map */

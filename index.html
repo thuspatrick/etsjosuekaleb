@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./bulma.min.css" />
     <link rel="stylesheet" href="./fontawesome.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -19,7 +15,7 @@
   </head>
   <body>
     <!-- Start of Navigation Menu -->
-    <div class="navbar is-info">
+    <div class="navbar is-link is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
           <a href="#" class="navbar-item">Josu&eacute; et Kaleb</a>
@@ -31,208 +27,415 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#" class="navbar-item is-active">Home</a>
-            <a href="#" class="navbar-item">A Propos</a>
-            <a href="#" class="navbar-item">Nos Services</a>
-            <a href="#" class="navbar-item">Nos R&eacute;alisations</a>
-            <a href="#" class="navbar-item">Contactez-Nous</a>
+            <a href="#home" class="navbar-item is-active">Home</a>
+            <a href="#apropos" class="navbar-item">A Propos</a>
+            <a href="#services" class="navbar-item">Nos Services</a>
+            <a href="#realisations" class="navbar-item">Nos R&eacute;alisations</a>
+            <a href="#contact" class="navbar-item">Contactez-Nous</a>
           </div>
         </div>
       </div>
     </div>
     <!-- End of Navigation Menu -->
-    <div id="apropos" class="hero is-fullheight-with-navbar">
-        <h1>Nous réalisons vos rêves</h1>
-        <a class="button" href="#">Lisez plus</a>
-    </div>
+    <!-- Start of Hero Section  -->
+    <section  id="apropos" class="hero is-fullheight-with-navbar header-image">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title is-large">
+              Nous réalisons vos rêves
+            </h1>
+            <p>m&egrave;me les plus incroyables...</p>
+            <div>
+                <a class="button is-medium is-focused is-link" href="#realisations">Lisez plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- End of Hero Section  -->
+        <!-- Start of Services Section  -->
     <section id="services">
-<div class="columns">
-  <div class="column is-4">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Construction Métallique</h3>
-      <p>
-        Vous avez désormais la solution pour vos constructions métalliques
-        de tous types. Votre sollicitaion est un gage de réalisation
-        conforme à vos exigences. Quelque soit la dimension de l'ouvrage:
-        Charpente métallique, Rack, Bac, Cuve, et autres, notre
-        savoir-faire méritera votre confiance.
-      </p>
-  </div>
-  <div class="column is-4">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Menuiserie Métallique</h3>
-            <p>
-              Plus de stress à vous faire pour vos ouvrages métalliques de tous
-              types. Quelque soit votre besoin en matière de : Grille de
-              sécurité, Portail métallique, Porte, plaque publicitaire, Enseigne
-              lumineuse, Férronnerie et autres. Faite nous confiance et vos
-              rêves se réaliseront à coup sûr. Nous mettons à votre disposition
-              un catalogue d'illustrations.
-            </p>
-  </div>
-  <div class="column is-4">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Menuiserie Alu & Bois</h3>
-      <p>
-        Nous ne lésinons pas sur les moyens dans ce domaine particulier,
-        qui ne saurait être confié aux amateurs du fait de son caractère
-        artistique, spécifique et précis. La menuiserie sur aluminium et
-        bois participe des secteurs qui nous valent nos lettres de
-        référence. Plusieurs partenaires nous ont fait confiance pour le
-        travail de qualité effectué dans les règles de l'art et surtout
-        avec respect de délais.
-      </p>
-  </div>
-  <div class="column is-4">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Prestation de Services</h3>
-      <p>
-        Nos prestations épousent généralement les besoins de nos clients.
-        Exprimez-nous vos besoins et nousnous ferons le plaisir de vous
-        fournir des services conformes à vos attentes.
-      </p>
-  </div>
-  <div class="column is-4">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Construction Métallique</h3>
-      <p>
-        Vous avez désormais la solution pour vos constructions métalliques
-        de tous types. Votre sollicitaion est un gage de réalisation
-        conforme à vos exigences. Quelque soit la dimension de l'ouvrage:
-        Charpente métallique, Rack, Bac, Cuve, et autres, notre
-        savoir-faire méritera votre confiance.
-      </p>
-  </div>
-  <div class="column is-4 ">
-      <i class="fas fa-apple-alt fa-2x"></i>
-      <h3>Bâtiment Clé en main</h3>
-      <p>
-        Nous avons l'expérience, le savoir-faire, le personnel et
+        <h1 class="title has-text-centered">
+            Nos Services
+          </h1>
+        <div class="columns is-multiline">
+        <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Construction Métallique</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                      Vous avez désormais la solution pour vos constructions métalliques
+                      de tous types. Votre sollicitaion est un gage de réalisation
+                      conforme à vos exigences. Quelque soit la dimension de l'ouvrage:
+                      Charpente métallique, Rack, Bac, Cuve, et autres, notre
+                      savoir-faire méritera votre confiance.
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Menuiserie Métallique</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                      Plus de stress à vous faire pour vos ouvrages métalliques de tous
+                        types. Quelque soit votre besoin en matière de : Grille de
+                        sécurité, Portail métallique, Porte, plaque publicitaire, Enseigne
+                        lumineuse, Férronnerie et autres. Faite nous confiance et vos
+                        rêves se réaliseront à coup sûr. Nous mettons à votre disposition
+                        un catalogue d'illustrations.
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Menuiserie Alu & Bois</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                        Nous ne lésinons pas sur les moyens dans ce domaine particulier,
+                        qui ne saurait être confié aux amateurs du fait de son caractère
+                        artistique, spécifique et précis. La menuiserie sur aluminium et
+                        bois participe des secteurs qui nous valent nos lettres de
+                        référence. Plusieurs partenaires nous ont fait confiance pour le
+                        travail de qualité effectué dans les règles de l'art et surtout
+                        avec respect de délais.
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Prestation de Services</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                        Nos prestations épousent généralement les besoins de nos clients.
+                        Exprimez-nous vos besoins et nousnous ferons le plaisir de vous
+                        fournir des services conformes à vos attentes.
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Fourniture Industrielle</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                        Josué & Kaleb met à votre disposition des fournitures
+                        industrielles répondant aux normes internationales. Le rapport
+                        qualité / prix est imbattable. Plus besoin de faire tous les
+                        magasins pour espérer trouver certains accessoires. Faites nous
+                        part de vos besoins et vous serez livré dans les délais.
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+                <div class="card">
+                    <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Bâtiment Clé en main</p>
+                      </div>
+                    </div>        
+                    <div class="content">
+                        Nous avons l'expérience, le savoir-faire, le personnel et
         l'équipement adéquat pour construire la maison de vos rêves. Nous
         sommes également ouvert à vous prodiguer des conseils techniques
         judicieux. Désormais, une seule adresse : Josué & Kaleb. Une
         entreprise dynamique et fiable vous accompagne depuis la
         schématisation de vos idées (conception du plan) jusqu'aux
         finitions.
-      </p>
-  </div>
-</div>
-
-    </section>
-    <section id="realisations"></section>
-
-    <!-- Start of footer Area -->
-    <footer class="footer">
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child is-6">
-            <h6 class="title is-4">About Us</h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore dolore magna aliqua.
-            </p>
-            <p class="is-small">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Ets. Josu&eacute; et Kaleb - All rights reserved </p>
-            <p>
-           This website is made with
-              <i class="fas fa-heart" aria-hidden="true"></i> by
-              <a href="#" target="_blank">Patrick Montheu</a>
-            </p>
-          </div>
-          <div class="tile is-child is-3">
-              <div class="footer-section">
-                <h6 class="title is-4">Suivez Nous</h6>
-                <p class="subtitle is-6">Sur les r&eacute;seaux sociaux</p>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-dribbble"></i></a>
-                  <a href="#"><i class="fab fa-behance"></i></a>
-                </div>
-              </div>
-            </div>
-          <div class="tile is-child is-3">
-            <div class="footer-section">
-              <h6 class="title is-4">Contactez-Nous</h6>
-              <div class="field">
-                <label class="label">Nom</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Votre Nom" />
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input
-                    class="input"
-                    type="email"
-                    placeholder="Email input"
-                    value="nom@adresse.com"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </span>
-                <!-- </div>
-                <p class="help is-danger">This email is invalid</p>
-              </div> -->
-              <div class="field">
-                <label class="label">Sujet</label>
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Choisissez</option>
-                      <option>Renseignements</option>
-                      <option>Cotation</option>
-                      <option>Renseignements</option>
-                    </select>
+                    </div>
                   </div>
                 </div>
+            </div>
+          </div>      
+    </section>
+    <!-- End of Services Section  -->
+    <!-- Start of Realisations Section  -->
+    <section id="realisations">
+        <div class="content has-text-centered">
+            <h1>Nos r&eacute;alisations</h1>
+            <p>Les ouvrages d&eacute;ja r&eacute;alis&eacute;que vous pouvez visiter</p>
+            </div>          
+          <div class="columns is-multiline">
+            <div class="column is-one-third-desktop is-half-tablet">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/mikael-kristenson-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title That is really long to show the clipping
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                          DETAILS
+                      </a>
+                  </footer>
               </div>
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Saisissez votre message"></textarea>
-                </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/jeff-sheldon-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                          DETAILS
+                      </a>
+                  </footer>
               </div>
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Envoyer</button>
+            </div>  
+            <div class="column is-one-third-desktop is-half-tablet">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/mikael-kristenson-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                          DETAILS
+                      </a>
+                  </footer>
+              </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/jeff-sheldon-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                          DETAILS
+                      </a>
+                  </footer>
+              </div>
+            </div>
+            <div class="column is-one-third-desktop is-half-tablet">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/mikael-kristenson-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                          DETAILS
+                      </a>
+                  </footer>
+              </div>
+            </div>
+            <div class="column c">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image is-3by2">
+                        <img src="./img/jeff-sheldon-ok.jpg" alt="">
+                      </figure>
+                      <div class="card-content is-overlay is-clipped">
+                        <span class="tag is-info">
+                          Photo Title
+                        </span>       
+                      </div>
+                  </div>
+                  <footer class="card-footer">
+                      <a class="card-footer-item">
+                        DETAILS
+                      </a>
+                  </footer>
+              </div>
+            </div>
+          </div>
+    </section>
+<!-- End of Realisations Section  -->
+<section id="contact-info">
+  <div class="columns is-multiline has-text-centered">
+    <div class="column is-one-third-desktop is-half-tablet">
+        <div class="card">
+            <div class="media-left">
+                <i class="fas fa-home fa-2x"></i>
+              </div>
+              <div class="media-content"><p>988, Rue Gallieni Akwa BP 6525 Douala</p>
+              </div>
+        </div>
+          <div class="card">
+              <div class="media-left">
+                  <i class="fas fa-phone fa-2x"></i>
+                  </div>
+                  <div class="media-content">
+                  <p>Tel: +237699748731 Tel: +237675283143</p>
                 </div>
-                <div class="control">
-                  <button class="button is-text">Annuller</button>
+          </div>     
+          
+      <div class="card">
+        <div class="media-left">
+          <i class="fas fa-at fa-2x"></i>
+        </div>
+          <div class="media-content">
+          <p>ets.josuekaleb@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third-desktop">
+        <div class="">
+          <h6 class="title">Suivez Nous</h6>
+          <p class="subtitle">Sur les r&eacute;seaux sociaux</p>
+          <div class="social-links">
+            <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-dribbble"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-behance"></i></a>
+          </div>
+        </div></div>
+        <div class="column is-half-tablet is-one-third-desktop">
+            <div class="contact-form">
+                <h6 class="title is-4">Contactez-Nous</h6>
+                <div class="field">
+                  <label class="label">Nom</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Votre Nom" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Email input"
+                      value="nom@adresse.com"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                <div class="field">
+                  <label class="label">Sujet</label>
+                    <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Choisissez</option>
+                        <option>Renseignements</option>
+                        <option>Cotation</option>
+                        <option>Renseignements</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Saisissez votre message"></textarea>
+                  </div>
+                </div>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Envoyer</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-text">Annuller</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--
-      <section id="contact-info">
-          <div class="adresses">
-            <div class="adress-1">
-              <i class="fas fa-home fa-2x"></i>
-              <p>988, Rue Gallieni Akwa BP 6525 Douala</p>
-            </div>
-            <div class="adress-1">
-              <i class="fas fa-phone fa-2x"></i>
-              <p>Tel: +237699748731 Tel: +237675283143</p>
-            </div>
-            <div class="adress-1">
-              <i class="fas fa-at fa-2x"></i>
-              <p>ets.josuekaleb@gmail.com</p>
-            </div>
+</section>
+<!-- Start of Contact Section  -->
+<!-- <section id="contact-info"> -->
+<div class="columns is-multiline">
+    <div class="column is-half-tablet is-one-third-desktop">
+    <div class="media">
+        
+    </div>
+  </div>
+</div>
+  <!-- </section> -->
+    <!-- Start of footer Area -->
+    <footer class="footer has-text-centered is-paddingless">
+        <div class="myfooter">
+            <h6 class="is-small">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Ets. Josu&eacute; et Kaleb - All rights reserved </h6>
+            <p>
+           This website is made with
+              <i class="fas fa-heart" aria-hidden="true"></i> by
+              <a href="#" target="_blank">Patrick Montheu</a>
+            </p>
           </div>
-        </section>
-      </main>
-    </footer>
-    -->
+  </footer>
     <!-- List of used Javascripts -->
     <script src="./toogleMenu.js"></script>
     <!-- End of List of used Javascripts -->
